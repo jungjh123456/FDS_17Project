@@ -61,6 +61,7 @@
   padding: 20px 30px 30px 30px;
   font-size: 1.4rem;  
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .nav__menuItem > a:hover {
@@ -156,9 +157,22 @@
 .form__btnSearch:hover,
 .form__btnSearch:hover::after{
   display: inline-block;
-  width: 180px;
-  background-position: right;
 
+  background-position: right;
+  animation: anime 1s;
+  animation-fill-mode: forwards;
+  
+
+}
+
+@keyframes anime {
+  0% {
+    width: 32px;
+
+  }
+  100% {
+    width: 180px;
+  }
 }
 
 
