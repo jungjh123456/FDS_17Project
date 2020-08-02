@@ -1,0 +1,184 @@
+.container {
+
+}
+/* header */
+.header {
+  background-color: #f6f5ef;
+  width: 1100px;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  top:0;
+  
+
+}
+
+/*header__logo*/
+
+.header__logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  
+}
+
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Navigation*/
+.nav {
+  display: flex;
+  width: 880px;
+  margin-right: 50px;
+  order: 1;
+
+}
+
+.nav__menu {
+  display: flex;
+
+  width: 100%;
+  justify-content: flex-end;
+}
+.nav__menuItem {
+  display: flex;
+
+  
+}
+.nav__menuItem > a{
+  display: block;
+  padding: 20px 30px 30px 30px;
+  font-size: 1.4rem;  
+  font-weight: 300;
+}
+
+.nav__menuItem > a:hover {
+  background-color: #333;
+  color: green;
+  text-decoration: underline;
+}
+
+/*unlist-userlink*/
+
+.unList__userLink {
+  font-size: 0;
+  
+}
+.unList__userLink li{
+
+  display: inline-block;
+  border-right: 1px solid #eee;
+}
+
+.unList__userLink a {
+  
+  font-size: 1.2rem;
+  padding: 10px 15px 10px 15px;
+  
+}
+
+.unList__userLink a:hover {
+  text-decoration: underline;
+}
+
+
+
+.form {
+  color: rgb(0, 128, 0);
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.form [type="search"]{
+  display: none;
+}
+
+/*IR TEXT는 기법으로 해결  */
+.form__btnSearch {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 34px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 34px;
+  background-color: rgb(255,255,255);
+  position: relative;
+  transition: 1s;
+}
+.form__btnSearch::after {
+  content: "";
+  background: url('../starbuximg/icon_magnifier_black.png') no-repeat center ;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+/*스타벅스 사이트에서는 focus시 열리게 되어 있다 사용자에게 큰 불
+편이 될 수 있으니 hover할때도 추가*/
+.form__btnSearch:focus,
+.form__btnSearch:focus::after,
+.form__btnSearch:hover,
+.form__btnSearch:hover::after{
+  display: inline-block;
+  width: 180px;
+  background-position: right;
+}
+
+.nav__subMenu.isAct{
+  display: flex;
+  position: absolute;
+  background-color: rgba(51,51,51,1);
+  top: 120px;
+  left:0;
+  width: 100%;
+  flex-flow: row wrap;
+  padding: 20px 30px 20px 30px;
+  transition: 1s;
+
+}
+
+.nav__subMenu.isAct .nav__subMenu-item{
+  width: 200px;
+  height: 200px;
+
+}
+.nav__subMenu.isAct .nav__subMenu-item h3{
+  color: rgb(255,255,255);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.nav__subMenu.isAct .nav__subMenu-item-list {
+  margin-top: 20px;
+}
+.nav__subMenu.isAct .nav__subMenu-item-list  li {
+  margin-bottom: 5px;
+}
+
+.nav__subMenu.isAct .nav__subMenu-item-list  li a{
+  color: #999;
+  font-weight: 700;
+ 
+} 
+
+.nav__subMenu.isAct .nav__subMenu-item h3 a:hover,
+.nav__subMenu.isAct .nav__subMenu-item-list  li a:hover {
+  text-decoration: underline;
+}
