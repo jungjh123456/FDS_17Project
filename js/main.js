@@ -12,40 +12,36 @@
 
 
 
-// function toggleElements(){
-//   [].forEach.call(liList1, function(toggle){
-//     toggle.classList.toggle('isAct');
-//   })
-// }
 
-// let btn = document.getElementById('btn');
-// let liList = document.querySelector('.nav__subMenu');
-
-// btn.addEventListener('mouseover', function() {
-//   toggleElements();
-// })
-
-// function toggleElements(){
-//      [].forEach.call(liList, function(toggle){
-//        toggle.classList.toggle('isAct');
-//      })
-//    }
-
-(function(document){
+(function( document){
   'use strict'
-let searchBtn = document.querySelector('.form__btnSearch');
+
+  const $nav = document.getElementById('nav__menu');
+  console.log($nav);
+  //isAct 추가
+  $nav.onmouseover =(e) => {
+    if(!e.target.matches('.nav__menu > li > a')) {
+      return;
+    }
+    console.log(e.target);
+    const subM =e.target.nextElementSibling; /*<- ul : nav__subMenu  */
+    e.target.nextElementSibling.classList.add('isAct');
+    // test.classList.add('isAct');
+    
+    // isAct 제거a
+    $nav.onmouseout =(e) => {
+      if(!e.target.matches('.nav__menu > li > a ')) {
+        return;
+      }
+      e.target.nextElementSibling.classList.remove('isAct');
+    }
+    subM.onmouseover = e =>{
+      subM.classList.add('isAct')
+      subM.onmouseout = e => {
+        subM.classList.remove('isAct')
+      }
+    }
+  }
 
 
-
-searchBtn.addEventListener('mouseover', function(){
-  let searchInput = document.getElementById('searchInput');
-  searchInput.getAttribute('class');
-  searchInput.setAttribute('class','isSearch');
-});
-
-// window.addEventListener('mouseover', function() {
-//   let searchInput = document.getElementById('searchInput');
-//   searchInput.getAttribute('class');
-//   searchInput.classList.remove('isSearch');
-// })
-})(document)
+})( document)

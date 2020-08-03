@@ -33,7 +33,11 @@
 }
 .nav__subMenu.isAct .nav__subMenu-item-list {
   margin-top: 20px;
+  
 
+}
+.nav__subMenu.isAct .nav__subMenu-item-list:last-child{
+  padding-bottom: 10px;
 }
 .nav__subMenu.isAct .nav__subMenu-item-list  li {
   margin-bottom: 5px;
@@ -60,7 +64,6 @@
   background: url('../starbuximg/gnb_sub_txbg.jpg');
   font-size: 1.5rem;
   transition: 0.4s;
-
 }
 
 .nav__desList.isActdes dt {
@@ -107,15 +110,27 @@
 
 /*position값 */
 .nav__desList1.isActdes {
-  top: 455px;
+  top: 303px;
   left: 0;
 }
 
-.nav__desList2.isActdes,
-.nav__desList3.isActdes,
-.nav__desList4.isActdes,
+.nav__desList2.isActdes{
+  top: 209px;
+  left: 0;
+}
+
+.nav__desList3.isActdes {
+  top:119px;
+  left: 0;
+}
 .nav__desList5.isActdes,
+.nav__desList4.isActdes {
+  top: 164px;
+  left: 0;
+}
+
+
 .nav__desList6.isActdes{
-  top: 350px;
+  top: 149px;
   left: 0;
 }

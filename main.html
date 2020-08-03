@@ -30,81 +30,89 @@
       <nav class="nav">
         <h2 class="a11yHidden">메인메뉴</h2>
 
-        <ul class="nav__menu">
+        <ul class="nav__menu" id="nav__menu">
           <!-- 누르면 이동 하니 aTAG를 사용 굳이 role을 변경해서
       바꾸지 않아도 상관 없음 -->
           <li class="nav__menuItem">
             <a href="#">coffee</a>
-            <ul class="nav__subMenu isAct">
-              <li class="nav__subMenu-item">
-                <h3><a href="#">커피</a></h3>
 
-                <ul class="nav__subMenu-item-list">
-                  <li><a href="#">스타벅스 원두</a></li>
-                  <li><a href="#">스타벅스 비아</a></li>
-                  <li><a href="#">스타벅스 오리가미</a></li>
-                </ul>
-              </li>
-              <li class="nav__subMenu-item">
-                <h3><a href="#">나와 어울리는 커피</a></h3>
-              </li>
-              <li class="nav__subMenu-item">
-                <h3><a href="#">스타벅스 리저브™</a></h3>
-                <ul class="nav__subMenu-item-list">
-                  <li><a href="#">RESERVE MAGAZINE</a></li>
-                </ul>
-              </li>
-              <li class="nav__subMenu-item">
-                <h3>
-                  <a href="#">에스프레소 음료</a>
-                </h3>
-                <ul class="nav__subMenu-item-list">
-                  <li><a href="#">도피오</a></li>
-                  <li><a href="#">에스프레소 마키아또</a></li>
-                  <li><a href="#">아메리카노</a></li>
-                  <li><a href="#">마키아또</a></li>
-                  <li><a href="#">카푸치노</a></li>
-                  <li><a href="#">라떼</a></li>
-                  <li><a href="#">모카</a></li>
-                  <li><a href="#">리스트레또 비안코</a></li>
-                </ul>
-              </li>
-              <li class="nav__subMenu-item">
-                <h3><a href="#">최상의 커피를 즐기는 법</a></h3>
-
-                <ul class="nav__subMenu-item-list">
-                  <li><a href="#">커피 프레소</a></li>
-                  <li><a href="#">푸어 오버</a></li>
-                  <li><a href="#">아이스 푸어 오버</a></li>
-                  <li><a href="#">커피 메이커</a></li>
-                  <li><a href="#">리저브를 매장에서 다양하게 즐기는 법</a></li>
-                </ul>
-
-              </li>
-              <li class="nav__subMenu-item">
-                <h3><a href="#">커피 이야기</a></h3>
-                <ul class="nav__subMenu-item-list">
-                  <li><a href="#">스타벅스 로스트 스팩트럼</a></li>
-                  <li><a href="#">최상의 아라비카 원두</a></li>
-                  <li><a href="#">한 잔의 커피가 완성되기까지</a></li>
-                  <li><a href="#">클로버® 커피 추출 시스템</a></li>
-                  <li><a href="#">스타벅스 디카페인</a></li>
-                </ul>
-              </li>
-
+              <ul class="nav__subMenu">
+            <li class="nav__subMenu-item">
+            <h3><a href="#">커피</a></h3>
+            
+            <ul class="nav__subMenu-item-list">
+            <li><a href="#">스타벅스 원두</a></li>
+            <li><a href="#">스타벅스 비아</a></li>
+            <li><a href="#">스타벅스 오리가미</a></li>
             </ul>
-
-            <dl class="nav__desList nav__desList1 isActdes">
+            </li>
+            <li class="nav__subMenu-item">
+            <h3><a href="#">나와 어울리는 커피</a></h3>
+            </li>
+            <li class="nav__subMenu-item">
+            <h3><a href="#">스타벅스 리저브™</a></h3>
+            <ul class="nav__subMenu-item-list">
+            <li><a href="#">RESERVE MAGAZINE</a></li>
+            </ul>
+            </li>
+            <li class="nav__subMenu-item">
+            <h3>
+            <a href="#">에스프레소 음료</a>
+            </h3>
+            <ul class="nav__subMenu-item-list">
+            <li><a href="#">도피오</a></li>
+            <li><a href="#">에스프레소 마키아또</a></li>
+            <li><a href="#">아메리카노</a></li>
+            <li><a href="#">마키아또</a></li>
+            <li><a href="#">카푸치노</a></li>
+            <li><a href="#">라떼</a></li>
+            <li><a href="#">모카</a></li>
+            <li><a href="#">리스트레또 비안코</a></li>
+            </ul>
+            </li>
+            <li class="nav__subMenu-item">
+            <h3><a href="#">최상의 커피를 즐기는 법</a></h3>
+            
+            <ul class="nav__subMenu-item-list">
+            <li><a href="#">커피 프레소</a></li>
+            <li><a href="#">푸어 오버</a></li>
+            <li><a href="#">아이스 푸어 오버</a></li>
+            <li><a href="#">커피 메이커</a></li>
+            <li><a href="#">리저브를 매장에서 다양하게 즐기는 법</a></li>
+            </ul>
+            
+            </li>
+            <li class="nav__subMenu-item">
+            <h3><a href="#">커피 이야기</a></h3>
+            <ul class="nav__subMenu-item-list">
+            <li><a href="#">스타벅스 로스트 스팩트럼</a></li>
+            <li><a href="#">최상의 아라비카 원두</a></li>
+            <li><a href="#">한 잔의 커피가 완성되기까지</a></li>
+            <li><a href="#">클로버® 커피 추출 시스템</a></li>
+            <li><a href="#">스타벅스 디카페인</a></li>
+            </ul>
+          </li>
+              <li><dl class="nav__desList nav__desList1 isActdes">
               <dt><a href="#">나와 어울리는 커피 찾기</a></dt>
               <dd>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</dd>
               <dt><a href="#">최상의 커피를 즐기는 법</a></dt>
               <dd>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</dd>
-            </dl>
+              </dl></li>
+            
+            </ul>
+            
+            <!-- <dl class="nav__desList nav__desList1 isActdes">
+            <dt><a href="#">나와 어울리는 커피 찾기</a></dt>
+            <dd>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</dd>
+            <dt><a href="#">최상의 커피를 즐기는 법</a></dt>
+            <dd>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</dd>
+            </dl> -->
+        
             
           </li>
 
           <li class="nav__menuItem">
-            <a href="#">menu</a>
+            <a  href="#">menu</a>
             <ul class="nav__subMenu">
               <li class="nav__subMenu-item">
                 <h3><a href="#">음료</a></h3>
@@ -165,13 +173,13 @@
                   <li><a href="#">스타벅스 티바나</a></li>
                 </ul>
               </li>
+                  <li><dl class="nav__desList nav__desList2 isActdes">
+                  <!--dt before속성으로 뉴 버튼 만들기 -->
+                  <dt><a href="#">나이트로 콜드 브루</a></dt>
+                  <dd>나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과 부드러운 크림을 경험하세요.</dd>
+                  </dl></li>
 
             </ul>
-            <dl class="nav__desList nav__desList2">
-              <!--dt before속성으로 뉴 버튼 만들기 -->
-              <dt><a href="#">나이트로 콜드 브루</a></dt>
-              <dd>나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과 부드러운 크림을 경험하세요.</dd>
-            </dl>
           </li>
 
           <li class="nav__menuItem">
@@ -208,16 +216,16 @@
                   <li><a href="#">파미에 마크</a></li>
                 </ul>
               </li>
+                  <li><dl class="nav__desList nav__desList3 isActdes">
+                  <dt><a href="#">매장 찾기</a></dt>
+                  <dd>보다 빠르게 매장을 찾아보세요.</dd>
+                  <!--dt before속성으로 뉴 버튼 만들기 -->
+                  <dt><a href="#">이대R점</a></dt>
+                  <dd>1호점 특화 MD와 티바나 티, 최고의 리저브 커피를 만나보세요.</dd>
+                  </dl></li>
 
 
             </ul>
-            <dl class="nav__desList nav__desList3">
-              <dt><a href="#">매장 찾기</a></dt>
-              <dd>보다 빠르게 매장을 찾아보세요.</dd>
-              <!--dt before속성으로 뉴 버튼 만들기 -->
-              <dt><a href="#">이대R점</a></dt>
-              <dd>1호점 특화 MD와 티바나 티, 최고의 리저브 커피를 만나보세요.</dd>
-            </dl>
           </li>
 
           <li class="nav__menuItem">
@@ -267,13 +275,13 @@
                   <li><a href="#">스타벅스 재단</a></li>
                   <li><a href="#">지구촌 봉사의 달</a></li>
                 </ul>
+                <dl class="nav__desList nav__desList4 isActdes">
+                  <dt><a href="#">커피원두 재활용</a></dt>
+                  <dd>스타벅스 커피 원두를 재활용해 보세요.</dd>
+                </dl>
               </li>
             </ul>
 
-            <dl class="nav__desList nav__desList4">
-              <dt><a href="#">커피원두 재활용</a></dt>
-              <dd>스타벅스 커피 원두를 재활용해 보세요.</dd>
-            </dl>
 
           </li>
 
@@ -314,14 +322,11 @@
                   <li><a href="#">자주하는 질문</a></li>
                 </ul>
               </li>
-
-            
-
+                  <li><dl class="nav__desList nav__desList5 isActdes">
+                  <dt><a href="#">스타벅스 카드 등록하기</a></dt>
+                  <dd>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</dd>
+                  </dl></li>
             </ul>
-            <dl class="nav__desList nav__desList5">
-              <dt><a href="#">스타벅스 카드 등록하기</a></dt>
-              <dd>카드 등록 후 리워드 서비스를 누리고 사용내역도 조회해보세요.</dd>
-            </dl>
 
           </li>
           <li class="nav__menuItem">
@@ -360,16 +365,18 @@
               <li class="nav__subMenu-item">
                 <h3><a href="#">월페이퍼</a></h3>
               </li>
+              <li>
+                 <dl class="nav__desList nav__desList6 isActdes">
+                  <dt><a href="#">매장별 이벤트</a></dt>
+                  <dd>스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.</dd>
+                  <dt><a href="#">월페이퍼</a></dt>
+                  <dd>매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를 더욱 가깝게 즐겨보세요!</dd>
+                  </dl>
+              </li>
 
-
+              
             </ul>
 
-            <dl class="nav__desList nav__desList6">
-              <dt><a href="#">매장별 이벤트</a></dt>
-              <dd>스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.</dd>
-              <dt><a href="#">월페이퍼</a></dt>
-              <dd>매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를 더욱 가깝게 즐겨보세요!</dd>
-            </dl>
 
 
           </li>
