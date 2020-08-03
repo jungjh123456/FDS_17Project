@@ -9,7 +9,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /*모든 요소가 계산되어서 보여진다.*/
+ 
 }
 
 html {
@@ -37,13 +37,6 @@ a {
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-.container {
-  /* width: 100%;
-  min-width: 1000px;
-  max-width: 1800px; */
-
-}
-
 .clearfix::after {
   content: "";
   display: block;
@@ -51,8 +44,5 @@ a {
 }
 
 .nav__subMenu {
-  display: none;
-}
-.nav__desList {
   display: none;
 }
