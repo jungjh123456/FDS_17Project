@@ -35,7 +35,6 @@ body{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
- 
   left: 150px;
   
 }
@@ -104,7 +103,6 @@ body{
 
 .form {
   /* color: rgb(0, 128, 0); */
-
   margin: 10px 40px 0 5px;
   position: relative;
 
