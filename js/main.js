@@ -31,7 +31,7 @@
 //      })
 //    }
 
-(function(window,document){
+(function(document){
   'use strict'
 let searchBtn = document.querySelector('.form__btnSearch');
 
@@ -48,4 +48,4 @@ searchBtn.addEventListener('mouseover', function(){
 //   searchInput.getAttribute('class');
 //   searchInput.classList.remove('isSearch');
 // })
-})(window,document)
+})(document)

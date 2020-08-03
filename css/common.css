@@ -19,10 +19,7 @@ body {
   font-family: 'Noto Sans KR', 'Jeju Gothic',sans-serif;
   font-weight: 300;
   color: #181818;
-  background-color: #fff;
-
-  
-
+  background-color: #f6f5ef;
 }
 
 
@@ -44,8 +41,7 @@ a {
   /* width: 100%;
   min-width: 1000px;
   max-width: 1800px; */
- 
-  background-color: red;
+
 }
 
 .clearfix::after {
