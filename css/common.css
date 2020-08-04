@@ -20,6 +20,7 @@ body {
   font-weight: 300;
   color: #181818;
   background-color: #f6f5ef;
+  margin-top: 132px;
 }
 
 
@@ -45,4 +46,15 @@ a {
 
 .nav__subMenu {
   display: none;
+  
 }
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: -4px;
+}
+
