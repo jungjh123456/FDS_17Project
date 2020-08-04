@@ -7,6 +7,7 @@ body{
 }
 
 /* header */
+
 .header {
   z-index: 1;
   background-color: #f6f5ef;
@@ -15,30 +16,23 @@ body{
   right: 0; 
   position: fixed;
   
-
 }
 
 /* 네비게이션 요소가 뷰포트 전체 영역을 차지 하기 위한 역할 */
 .header .inner {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  flex-flow: row wrap;
-  align-items: center;
-  border:  1px solid black;
+
 }
 
 /*header__logo*/
 
 .header__logo {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 150px;
+  float: left;
+ 
+  margin: 30px 0 0 0;
+  width: 90px;
+  height: 90px;
+ 
 }
-
 
 .header__logo img {
   width: 100%;
@@ -46,18 +40,24 @@ body{
 }
 
 /*Navigation*/
+.flex-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .nav {
   order: 1;
 }
 
 .nav__menu {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 50px;
 }
-
-
+.nav__menu li {
+  display: inline-block;
+}
 .nav__menuItem > a{
   display: block;
   padding: 20px 30px 40px 30px;
@@ -155,28 +155,35 @@ body{
 /*article*/
 
 
-
-/* 슬로건 */
+/* Article */
 .slogan {
-  background: url(/starbuximg/summer3_mv_bg.png) no-repeat;
- 
+  /* background-color: #70C4D9; */
   min-height: 650px;
+  background-color: #70C4D9;
+  background-image: url(../starbuximg/summer3_mv_bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.slogan__div {
+  display: flex;
+}
+.slogan .inner {
+  margin: 0 auto;
   position: relative;
-
+  /* width: 1100px; */
 }
 .slogan__img {
   /* background-color: blue; */
-  padding-top: 70px;
-  padding-left: 150px;
+  padding:50px;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1.5s  both;
+  animation: sloganAni 1s ease-in-out 1.5s both;
 }
 .slogan__link {
   margin: 0;
   padding: 0;
   position: absolute;
   top: 370px;
-  left: 150px;
+  left: 120px;
   font-size: 1.5rem;
   font-weight: 400;
   border: 2px #fff solid;
@@ -187,7 +194,6 @@ body{
   opacity: 0;
   animation: sloganAni 1s ease-in-out 2s both;
 }
-
 .slogan__link:hover {
   background-color: #00A252;
   text-decoration: underline;
@@ -195,50 +201,56 @@ body{
 .slogan__figure1 {
   position: absolute;
   top: 240px;
-  left: 550px;
+  left: 35%;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 0.5s  both;
+  animation: sloganAni 1s ease-in-out 0.5s both;
+ 
 }
 .slogan__figure2 {
   position: absolute;
   top: 80px;
-  left: 790px;
+  left: 55%;
   opacity: 0;
- 
-  animation: sloganAni 1s ease-in-out  both;
+  animation: sloganAni 1s ease-in-out both;
 }
 .slogan__figure3 {
   position: absolute;
   top: 200px;
-  left: 900px;
+  left: 65%;
   opacity: 0;
-  animation: sloganAni 1s ease-in-out 1.0s  both;
+  animation: sloganAni 1s ease-in-out 1s both;
 }
 .slogan__figure1 img {
-  width: 290px;
+  /* width: 290px; */
+  width: 100%;
+  max-width: 290px;
 }
 .slogan__figure2 img {
-  width: 180px;
+  /* width: 180px; */
+  width: 100%;
+  max-width: 180px;
 }
 .slogan__figure3 img {
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
+  max-width: 320px;
 }
 .slogan figcaption {
   color: #fff;
   font-size: 1.7rem;
   font-weight: 400;
 }
-.slogan__figcaption1{
+.slogan__figcaption1 {
   position: absolute;
   top: 220px;
   left: -170px;
 }
-.slogan__figcaption2{
+.slogan__figcaption2 {
   position: absolute;
   top: 20px;
   left: -230px;
 }
-.slogan__figcaption3{
+.slogan__figcaption3 {
   position: absolute;
   top: 360px;
   left: 80px;
@@ -258,29 +270,25 @@ figcaption span:nth-child(1)::after {
 .slogan__figcaption2 span:nth-child(1)::after {
   border: none;
 }
-
 figcaption div {
   text-align: center;
   text-transform: uppercase;
 }
-
-figcaption div::after{
+figcaption div::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
-  margin:0;
+  margin: 0;
   margin: 10px 0;
 }
-
 @keyframes sloganAni {
-  0%{
+  0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
-
 /* notice */
 
 .notice {

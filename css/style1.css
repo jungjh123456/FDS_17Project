@@ -82,7 +82,7 @@ body {
 }
 
 .nav {
-  order: 2;
+  order: 1;
 }
 .nav__menu {
   margin-top: 20px;
@@ -185,90 +185,101 @@ body {
 
 
 /* Article */
-.slogan{
-  width: 100%;
-}
-.slogan .inner{
-  width: 1100px;
-  position: relative;
-}
-/* 슬로건 */
 .slogan {
-  background: url(/starbuximg/summer3_mv_bg.png) no-repeat;
-  background-size: 100% 100%;
+  /* background-color: #70C4D9; */
   min-height: 650px;
+  background-color: #70C4D9;
+  background-image: url(../starbuximg/summer3_mv_bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.slogan__div {
+  display: flex;
+}
+.slogan .inner {
+  margin: 0 auto;
+  position: relative;
+  /* width: 1100px; */
 }
 .slogan__img {
+  /* background-color: blue; */
+  padding:50px;
+  opacity: 0;
   animation: sloganAni 1s ease-in-out 1.5s both;
-  padding-top: 70px;
-  /* padding-left: 150px; */
 }
 .slogan__link {
-  animation: sloganAni 1s ease-in-out 2s both;
-  display: block;
-  width: 150px;
-  margin-top: 30px;
-  text-align: center;
-  /* margin: 0;
+  margin: 0;
   padding: 0;
   position: absolute;
   top: 370px;
-  left: 150px; */
+  left: 120px;
   font-size: 1.5rem;
   font-weight: 400;
   border: 2px #fff solid;
-  border-radius: 3px;
-  transition: 500ms;
   padding: 10px 25px;
   color: #fff;
+  border-radius: 3px;
+  transition: 500ms;
+  opacity: 0;
+  animation: sloganAni 1s ease-in-out 2s both;
 }
-.slogan__link:hover{
-  text-decoration: underline;
+.slogan__link:hover {
   background-color: #00A252;
+  text-decoration: underline;
 }
 .slogan__figure1 {
-  animation: sloganAni 1s ease-in-out 0.5s both;
   position: absolute;
   top: 240px;
-  left: 550px;
+  left: 35%;
+  opacity: 0;
+  animation: sloganAni 1s ease-in-out 0.5s both;
+ 
 }
 .slogan__figure2 {
-  animation: sloganAni 1s ease-in-out both;
   position: absolute;
   top: 80px;
-  left: 790px;
+  left: 55%;
+  opacity: 0;
+  animation: sloganAni 1s ease-in-out both;
 }
 .slogan__figure3 {
-  animation: sloganAni 1s ease-in-out 1s both;
   position: absolute;
   top: 200px;
-  left: 900px;
+  left: 65%;
+  opacity: 0;
+  animation: sloganAni 1s ease-in-out 1s both;
 }
 .slogan__figure1 img {
-  width: 290px;
+  /* width: 290px; */
+  width: 100%;
+  max-width: 290px;
 }
 .slogan__figure2 img {
-  width: 180px;
+  /* width: 180px; */
+  width: 100%;
+  max-width: 180px;
 }
 .slogan__figure3 img {
-  width: 320px;
+  /* width: 320px; */
+  width: 100%;
+  max-width: 320px;
 }
 .slogan figcaption {
   color: #fff;
   font-size: 1.7rem;
   font-weight: 400;
 }
-.slogan__figcaption1{
+.slogan__figcaption1 {
   position: absolute;
   top: 220px;
   left: -170px;
 }
-.slogan__figcaption2{
+.slogan__figcaption2 {
   position: absolute;
   top: 20px;
   left: -230px;
 }
-.slogan__figcaption3{
+.slogan__figcaption3 {
   position: absolute;
   top: 360px;
   left: 80px;
@@ -279,32 +290,31 @@ body {
   text-transform: uppercase;
   line-height: 1.4;
 }
-figcaption div {
-  text-align: center;
-  text-transform: uppercase;
-}
-.slogan__figcaption2 span:nth-child(1)::after{
-  display: none;
-}
-figcaption div::after{
-  content: "";
-  display: block;
-  border-bottom: 1px solid #fff;
-  margin:0;
-  margin: 10px 0;
-}
 figcaption span:nth-child(1)::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
   margin: 5px 0;
 }
-/* 슬로건 애니메이션 */
-@keyframes sloganAni{
-  0%{
+.slogan__figcaption2 span:nth-child(1)::after {
+  border: none;
+}
+figcaption div {
+  text-align: center;
+  text-transform: uppercase;
+}
+figcaption div::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  margin: 10px 0;
+}
+@keyframes sloganAni {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }

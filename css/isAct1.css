@@ -10,13 +10,13 @@
 
   flex-flow: row wrap;
   padding: 20px 0 20px 150px;
+  
   right: 0;
-
 }
 
 .nav__subMenu.isAct .nav__subMenu-item {
   /* width: 240px; */
-  width: 18.1818%;
+  width: 20%;
   height: auto;
   /* height: 200px; */
   /* padding-left:20px ; */
@@ -30,6 +30,7 @@
 
 .nav__subMenu.isAct .nav__subMenu-item-list {
   margin-top: 20px;
+
 }
 
 .nav__subMenu.isAct .nav__subMenu-item-list:last-child {
@@ -38,6 +39,7 @@
 
 .nav__subMenu.isAct .nav__subMenu-item-list li {
   margin-bottom: 5px;
+  display: flex;
 }
 
 .nav__subMenu.isAct .nav__subMenu-item-list li a {
