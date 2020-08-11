@@ -1,0 +1,276 @@
+.container {
+  
+ 
+}
+.header {
+  z-index: 11;
+  background-color: #f6f5ef;
+  padding-right: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+.inner {
+
+  margin:0 auto;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.unList__userLink {
+  float: right;
+  margin-right: 0px;
+}
+.unList__userLink li {
+  margin-top: 10px;
+  /* margin-bottom: 5px; */
+  display: inline-block;  
+  border-right: 1px solid #aaa;
+}
+
+.unList__userLink li:last-child {
+  border-right: 0;
+}
+.unList__userLink a {
+  display: block;
+  padding: 3px 10px;
+}
+
+.form {
+
+  float: right;
+}
+.form fieldset {
+  
+}
+.form [type="search"] {
+  border: 0;
+  width: 1px;
+  height: 1px; 
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  overflow: hidden;
+  transform: translateX(6px);
+  height: 37px;
+  transition: 1s;
+  vertical-align: middle;
+  border-radius: 5px 0 0 5px;
+  /* width: calc(100% - 38px); */
+}
+.form__btnSearch {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 37px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+  padding-top: 37px;
+  position: relative;
+  /* background-color: transparent; */
+  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
+
+}
+.form__btnSearch::after {
+  content: "";
+  position: absolute;
+  background: #fff url(/starbucksimg/icon_magnifier_black.png) no-repeat center 50%;
+}
+
+.form [type="search"].isSearch {
+  width: 150px;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+
+
+.nav {
+  float: right;
+  font-size: 1.5rem;
+
+}
+
+.nav__menu {
+  margin-top: 23px;
+  text-transform: uppercase ;
+  font-size: 0;
+  
+}
+
+
+.nav__menu li {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.nav__menu li:last-child {
+
+ 
+}
+.nav__menu a {
+  display: block;
+  padding: 20px 20px 30px 20px;
+
+
+}
+.nav__menuItem > a:hover,
+.nav__menuItem > a:focus
+ {
+  background-color: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+}
+
+
+.buttonBurger {
+  display: none;
+}
+
+.header .small {
+  display: none;
+}
+
+/*article*/
+
+.slogan {
+  background: #70c4d9 url(/starbucksimg/summer3_mv_bg.jpg) no-repeat center;
+  height: 650px;
+  width: 100%;
+}
+
+.slogan .inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.slogan__img {
+  padding-top: 50px;
+  opacity: 0;
+  animation: opacityAni 1s ease-in-out 1.5s both;
+}
+
+.slogan__figure1 {
+  position: absolute;
+  top: 240px;
+  left: 35%;
+  opacity: 0;
+  animation: opacityAni  1s ease-in-out 0.5s both;
+}
+
+.slogan__figure2 {
+  position: absolute;
+  top: 80px;
+  left: 55%;
+  opacity: 0;
+  animation: opacityAni  1s ease-in-out both;
+}
+
+.slogan__figure3 {
+  position: absolute;
+  top: 200px;
+  left: 65%;
+  opacity: 0;
+  animation: opacityAni  1s ease-in-out 1s both;
+}
+
+.slogan__figure1 img {
+  width: 100%;
+  max-width: 290px;
+}
+
+.slogan__figure2 img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.slogan__figure3 img {
+  width: 100%;
+  max-width: 320px;
+}
+
+.slogan figcaption {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.slogan figcaption span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.slogan span:nth-child(1)::after,
+.slogan__figcaption2 span:nth-child(2)::after
+{
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  margin: 5px 0;
+}
+
+.slogan__figcaption2 span:nth-child(1)::after {
+  border: none;
+}
+
+.slogan__figcaption1 {
+  position: absolute;
+  top: 220px;
+  left: -170px;
+}
+
+.slogan__figcaption2 {
+  position: absolute;
+  top: 20px;
+  left: -230px;
+}
+
+.slogan__figcaption3 {
+  position: absolute;
+  top: 360px;
+  left: 80px;
+}
+
+
+
+.slogan__link {
+  position: absolute;
+  top: 100%;
+
+  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-top: 40px;
+  opacity: 0;
+  animation: opacityAni  1s ease-in-out 2s both;
+}
+
+.slogan__link:hover {
+  background-color: #00A252;
+}
+
+@keyframes opacityAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*memberService*/
+.memberService {
+  background-image:  url('../starbucksimg/reward_star_bg_m.png'),url('../starbucksimg/272727.png'), url('../starbucksimg/reward_texbg.jpg');
+  background-repeat: no-repeat no-repeat;
+  background-size: 450px 100%, 190px 100%, 100% 100%;
+  background-position: left 80px top 0px, left 0 top 0px, right 0px top 0px;
+}
