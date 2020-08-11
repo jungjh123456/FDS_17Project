@@ -273,4 +273,49 @@
   background-repeat: no-repeat no-repeat;
   background-size: 450px 100%, 190px 100%, 100% 100%;
   background-position: left 80px top 0px, left 0 top 0px, right 0px top 0px;
+  min-height: 290px;
+}
+.memberService__heading {
+  width: 70%;
+  float: left;
+  border: 1px solid;
+  float: right;
+  height: 30px;
+  font-size: 2.4rem;
+  padding-left: 130px;
+}
+.memberService__logDes {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: flex-end;
+  border: 2px solid;
+}
+.memberService__logDes p {
+  float: left;
+  margin-right: 250px;
+  font-size: 1.4rem;
+  width: 580px;
+  border: 2px solid;
+}
+.memberService__logDes span {
+  display: block;
+  margin-bottom: 5px;
+}
+.memberService__giftDes {
+  float: right;
+  
+}
+.memberService__signGroup {
+  float: right;
+}
+.memberService__logDes-signUp {
+  float: left;
+}
+.memberService__logo {
+  
+
+  float: left;
+  margin-left: 150px;
+  transform: translateY(-130%);
 }
