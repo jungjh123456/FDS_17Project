@@ -267,55 +267,144 @@
   }
 }
 
-/*memberService*/
+/* 리워드 */
+
 .memberService {
-  background-image:  url('../starbucksimg/reward_star_bg_m.png'),url('../starbucksimg/272727.png'), url('../starbucksimg/reward_texbg.jpg');
-  background-repeat: no-repeat no-repeat;
+ 
+  padding: 20px 0 20px 50px;
+  background-image: url(../starbucksimg/reward_star_bg_m.png),
+    url(../starbucksimg/272727.png), url(../starbucksimg/reward_texbg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 450px 100%, 190px 100%, 100% 100%;
   background-position: left 80px top 0px, left 0 top 0px, right 0px top 0px;
-  min-height: 290px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  
 }
+
+.memberService__text {
+  display: flex;
+  flex-flow: column;
+  width: 780px;
+  font-size: 1.5rem;
+
+  margin-left: 30px;
+}
+
+.memberService__index {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
 .memberService__heading {
-  width: 70%;
-  float: left;
-  border: 1px solid;
-  float: right;
-  height: 30px;
-  font-size: 2.4rem;
-  padding-left: 130px;
+  height: 80px;
+  display: flex;
+  
+  margin-right: 120px;
+  margin-left: 100px;
 }
+.memberService__heading img {
+  
+}
+.memberService__heading em {
+  
+}
+
 .memberService__logDes {
   display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  justify-content: flex-end;
-  border: 2px solid;
+  flex-flow: row;
+  margin-bottom: 30px;
 }
-.memberService__logDes p {
-  float: left;
-  margin-right: 250px;
-  font-size: 1.4rem;
-  width: 580px;
-  border: 2px solid;
-}
-.memberService__logDes span {
-  display: block;
-  margin-bottom: 5px;
-}
-.memberService__giftDes {
-  float: right;
-  
-}
-.memberService__signGroup {
-  float: right;
-}
-.memberService__logDes-signUp {
-  float: left;
-}
-.memberService__logo {
-  
 
-  float: left;
-  margin-left: 150px;
-  transform: translateY(-130%);
+.memberService__logDes p {
+  flex-grow: 1;
+}
+
+.memberService__logDes em {
+  font-weight: 700;
+  color: #555;
+}
+
+.memberService__logDes p em {
+  display: inline-block;
+}
+
+.memberService__signGroup {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.memberService__logDes-signUp {
+  background-color: #000;
+  display: inline-block;
+  padding: 8px 30px;
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 500ms linear;
+ 
+}
+
+.memberService__logDes-signUp:hover {
+  background-color: transparent;
+  color: #000;
+  text-decoration: underline;
+}
+
+.memberService__logDes-signIn {
+  display: inline-block;
+  background-color: transparent;
+  color: #000;
+  padding: 8px 35px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  transition: all 500ms linear;
+}
+
+.memberService__logDes-signIn:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.memberService__giftDes {
+
+}
+
+.memberService__logDes span,
+.memberService__giftDes span {
+  display: block;
+}
+
+.memberService__giftDes em {
+
+}
+
+.memberService__giftLink {
+  background-color: #000;
+  display: inline-block;
+  padding: 8px 30px;
+  border: 1px solid #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 500ms linear;
+  margin-top: 10px;
+}
+
+.memberService__giftLink:hover {
+  
+}
+
+.memberService__logo {
+ 
+}
+
+/*favorite*/
+
+.favorite {
+  display: flex;
+  align-items: center;
 }

@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/earlyaccess/jejugothic.css");
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @font-face {
   font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
@@ -17,7 +17,7 @@ body {
   font-family: "Noto Sans KR", "Jeju Gothic", sans-serif;
   font-weight: 300;
   color: #181818;
-  margin-top: 120px;
+
   /* overflow: auto; */
   background-color: inherit;
 }
@@ -40,11 +40,6 @@ a:focus{
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-span[aria-hidden=true]{
-  /* color: blue; */
-  display: inline;
-}
-/*display:block으로 아래로 내려가서 인라인 요소로  특수기호들만 모아서 인라인으로 만듬*/
 .clearfix::after {
   content: "";
   display: block;
@@ -52,13 +47,14 @@ span[aria-hidden=true]{
 }
 
 .inner {
-  width: 1100px;
+  /* width: 1100px; */
   margin: 0 auto;
 }
 
 .nav__subMenu {
   display: none;
 }
+
 
 /* 버튼 공통 스타일 */
 .btn-com {
@@ -79,3 +75,197 @@ span[aria-hidden=true]{
   text-decoration: underline;
 }
 
+.buttonNone {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+
+/* 공지사항 */
+
+.notice {
+  background-color: #111;
+  color: #fff;
+  
+  text-align: center;
+  padding: 15px 0;
+}
+.notice .inner {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+}
+.notice__heading {
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 300px;
+}
+
+.notice__list {
+
+  font-size: 1.4rem;
+
+  height: 20px;
+  overflow: hidden;
+  padding: 5px 0 10px;
+  margin-right: 40px;
+
+}
+
+.notice__list li {
+  animation: noticeAni 5s linear infinite alternate;
+  margin-bottom: 10px;
+}
+
+.notice__list a {
+  display: block;
+  padding: 5px 400px 0 0;
+}
+
+.notice__list a:hover {
+  text-decoration: underline;
+}
+
+.notice__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 3rem;
+  font-weight: 400;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  
+}
+
+
+@keyframes noticeAni {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-510%);
+  }
+}
+
+
+/*ad*/
+
+.ad {
+  background-image: url(../starbucksimg/20_summer_rwanda_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.ad__figure {
+  display: flex;
+  align-items: center;
+}
+
+.ad__figcaption {
+  margin-left: 50px;
+}
+
+.ad__figcaption-selling {
+  color: #bae1c6;
+  font-size: 2rem;
+
+}
+.ad__figcaption-sellingDes {
+  color: #fff;
+  font-size: 1.7rem;
+  opacity: 0.8;
+  padding-top: 15px;
+}
+.ad__figcaption-selling span,
+.ad__figcaption-sellingDes span,
+.ad__figcaption-sellingDes span {
+  display: block;
+}
+.ad__link {
+  margin-top: 50px;
+}
+
+
+/* 새소식 */
+
+.news {
+ 
+  /* background: url(/starbucksimg/summer2_reserve_bean.png) no-repeat 1000px right top 50px ; */
+  background-image: url(../starbucksimg/summer2_reserve_bean.png);
+  background-color: #C3D2D9;
+  background-repeat: no-repeat;
+  background-position: right top 50px;
+  background-size: 1000px;
+  animation: opacityAni   2s forwards;
+}
+
+.news__heading {
+  padding-top: 80px;
+  margin-left: -130px;
+}
+
+.news a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin: 10px 0 0 50px;
+  /* margin-left: 50px;
+  margin-top: 10px; */
+  transition: 1s;
+}
+
+.news a:hover {
+  background: #000;
+  color: #eee;
+  text-decoration: underline;
+}
+
+.news__link {
+  margin: 10px 0 0 50px;
+  /* margin-left: 50px;
+  margin-top: 10px; */
+}
+
+.news__link:hover {
+  background: #000;
+  color: #eee;
+}
+
+.news__list {
+  color: #5b6567;
+  margin: 20px 0 0 70px;
+  /* margin-top: 20px;
+  margin-left: 70px; */
+  font-size: 1.4rem;
+}
+
+.news__list li {
+  list-style: none;
+  line-height: 1.5;
+}
+
+.news__list li::before{
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  background-color: #5b6567;
+}
